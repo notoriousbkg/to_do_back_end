@@ -13,4 +13,12 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree .
+//= require_tree 
+/*global $*/
+$(document).ready(function(){
+    $("ul").on("click","input[type=checkbox]",
+    function(){
+        $(this).closest("li").toggleClass("completed-todo")
+    })
+})
+
