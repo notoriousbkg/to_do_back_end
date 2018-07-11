@@ -1,20 +1,29 @@
 class TodoController < ApplicationController
     def index
-        @todo_name="Eat food"
-        @todo_time="100000 min"
-        @todo_days="3"
-        @todo_description="eat all the food, leave none"
     end
     def AddTask
+    
     end
+    def create
+         t = Todo.new
+         t.task = params['task']
+         t.time = params['time']
+         t.days = params['days']
+         t.description = params['description']
+         t.save
+         redirect_to "/todo/show/#{t.id}"
+    
+    end
+    
     def show
         @todo_name="Eat food"
         @todo_time="100000 min"
         @todo_days="3"
         @todo_description="eat all the food, leave none"
     
-    todo_id = params[:id]
-    
+        todo_id = params[:id]
+        @todo= Todo.find_by_id(params[:id])
+=begin
     if todo_id == '1'
         @todo_name = 'walk the dog'
         @todo_time = '30 min'
@@ -35,7 +44,9 @@ class TodoController < ApplicationController
         @todo_time = ''
         @todo_days = ''
         @todo_description = ''
+    
     end
+=end    
     end
     
 
