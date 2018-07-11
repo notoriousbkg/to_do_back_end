@@ -37,7 +37,6 @@ class TodoController < ApplicationController
         @todo_description = ''
     end
     end
-        
     
 
 end
