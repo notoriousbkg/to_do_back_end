@@ -1,15 +1,58 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+html {
+    font-family: Verdana;
+    background-color: #AFEEEE;
+    margin:auto;
+}
+.completed-todo{
+    text-decoration: line-through
+}
+h1 {
+    border-radius: 10px;
+    color: #80000;
+    font-size: 35px;
+    font-weight: bold;
+    background-color: rgb(255,0,255); 
+    width:330px;
+    text-align: center;
+    margin:auto;
+    
+}
+.minutes{
+    background-color: rgb(100,149,237);
+    border-radius: 5px;
+}
+.days-till-due {
+    background-color: #AFEEEE;
+    border-radius: 5px;
+}
+ul {
+    border-radius: 10px;
+    color: #80000;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgb(255,0,255); 
+    width:330px;
+    margin:auto;
+    list-style-type: none;
+    padding: 5px;
+    
+}
+li {
+    margin: 3px;
+}
+#add-a-to-do{
+    font-size: 20px;
+    text-align: center;
+    color: #000;
+    outline:none;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow:5px 5px 5px #90A4AE;
+}
+#add-a-to-do:active{
+    box-shadow: 1px 1px 1px #90A4AE;
+    color: #00FF00;
+}
+#add-a-to-do:hover{
+    background-color: #008000
+}
