@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  task: 
+  time: 1
+  days: 1
+  description: 
+  complete: false
+
+two:
+  task: 
+  time: 1
+  days: 1
+  description: 
+  complete: false
