@@ -1,4 +1,4 @@
-html {
+.to-do-page {
     font-family: Verdana;
     background-color: #AFEEEE;
     margin:auto;
@@ -6,7 +6,7 @@ html {
 .completed-todo{
     text-decoration: line-through
 }
-h1 {
+.to-do-header {
     border-radius: 10px;
     color: #80000;
     font-size: 35px;
@@ -25,7 +25,7 @@ h1 {
     background-color: #AFEEEE;
     border-radius: 5px;
 }
-ul {
+.to-do-list {
     border-radius: 10px;
     color: #80000;
     font-size: 15px;
@@ -55,4 +55,108 @@ li {
 }
 #add-a-to-do:hover{
     background-color: #008000
+}
+
+.add-task-page{
+    font-family: Verdana;
+    background-color: rgb(255,0,255);
+    margin:auto;
+    
+}
+.add-task {
+    background-color: #AFEEEE;
+    border-radius: 10px;
+    width: 175px;
+    text-align: center
+}
+.answers {
+    background-color: #AFEEEE;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center
+}
+#final-add{
+    font-size: 20px;
+    text-align: center;
+    color: #000;
+    outline:none;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow:5px 5px 5px #90A4AE;
+}
+#final-add:active{
+    box-shadow: 1px 1px 1px #90A4AE;
+    color: #00FF00;
+}
+#final-add:hover{
+    background-color: #008000
+    
+}
+#back{
+    font-size: 20px;
+    text-align: center;
+    color: #000;
+    outline:none;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow:5px 5px 5px #90A4AE;
+}
+#back:active{
+    box-shadow: 1px 1px 1px #90A4AE;
+    color: #00FF00;
+}
+#back:hover{
+    background-color: #008000
+    
+}
+
+.show-page{
+    font-family: Verdana;
+    background-color: #F4F
+}
+.task-details {
+    background-color: #AFEEEE;
+    border-radius: 10px;
+    width: 175px;
+    text-align: center
+}
+.show-headers {
+    background-color: #AFEEEE;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center
+}
+#Delete{
+    font-size: 20px;
+    text-align: center;
+    color: #000;
+    outline:none;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow:5px 5px 5px #90A4AE;
+}
+#Delete:active{
+    box-shadow: 1px 1px 1px #90A4AE;
+    color: #00FF00;
+}
+#Delete:hover{
+    background-color: #008000
+    
+}
+#Edit{
+    font-size: 20px;
+    text-align: center;
+    color: #000;
+    outline:none;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow:5px 5px 5px #90A4AE;
+}
+#Edit:active{
+    box-shadow: 1px 1px 1px #90A4AE;
+    color: #00FF00;
+}
+#Edit:hover{
+    background-color: #008000
+    
 }
