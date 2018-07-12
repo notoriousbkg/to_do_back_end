@@ -2,7 +2,6 @@ class TodoController < ApplicationController
     def index
     end
     def AddTask
-    
     end
     def index
     @todos = Todo.all
@@ -52,6 +51,15 @@ class TodoController < ApplicationController
 =end    
     def edit
         @todo = Todo.find_by_id(params[:id])
+    end
+    def update
+      t = Todo.find_by_id(params['id'])
+      t.task = params['task']
+      t.time = params['time']
+      t.days = params['days']
+      t.description = params['description']
+      t.save
+      redirect_to "/todo/show/#{t.id}"
     end
     end
     

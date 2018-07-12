@@ -19,7 +19,7 @@
           <form action="/todo/destroy/<%= @todo.id %>">
           <input id="Delete" type="submit" value="Delete">
           </form>
-          <input id="Edit" type="submit" value="Edit">
+          <a href="/todo/edit/<%= @todo.id %>" class="button edit-todo-button">Edit</a>
           <form action="/todo/index">
-          <span><input id="back" type="submit" value="Back"></span>
+          <span><input id="back" type="submit" value="Back To List"></span>
           </form>
