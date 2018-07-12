@@ -6,8 +6,6 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-config.assets.initialize_on_precompile = false
-RAILS_ENV=production bundle exec rake assets:precompile
 
 module Workspace
   class Application < Rails::Application
