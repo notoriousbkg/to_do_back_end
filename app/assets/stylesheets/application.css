@@ -160,3 +160,22 @@ li {
     background-color: #008000
     
 }
+#Delete{
+    font-family: Verdana;
+    font-size: 20px;
+    text-align: center;
+    color: #000;
+    outline:none;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow:5px 5px 5px #90A4AE;
+    text-decoration: none;
+    background-color: #e7e7e7;
+}
+#Delete:active{
+    box-shadow: 1px 1px 1px #90A4AE;
+    color: #00FF00;
+}
+#Delete:hover{
+    background-color: #008000
+}

@@ -1,23 +1,24 @@
-        <!--<h3>Todo #<% params[:id] %></h3>-->
         <div class="show-page">
           <h1 class="task-details">Task Details</h1>
           <h3 class="show-headers">Task</h3>
           <p>
-              <%=@todo.task%>
+              <%= @todo.task %>
           </p>
           <h3 class="show-headers">Time</h3>
           <p>
-              <%=@todo.time%>
+              <%= @todo.time %> minutes
           </p>
           <h3 class="show-headers">Days Till Due</h3>
           <p>
-              <%=@todo.days%>
+              <%= @todo.days %> day(s)
           </p>
           <h3 class="show-headers">Description</h3>
           <p>
-              <%=@todo.description%>
+              <%= @todo.description %>
           </p>
+          <form action="/todo/destroy/<%= @todo.id %>">
           <input id="Delete" type="submit" value="Delete">
+          </form>
           <input id="Edit" type="submit" value="Edit">
           <form action="/todo/index">
           <span><input id="back" type="submit" value="Back"></span>

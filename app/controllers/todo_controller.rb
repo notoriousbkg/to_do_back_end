@@ -4,6 +4,9 @@ class TodoController < ApplicationController
     def AddTask
     
     end
+    def index
+    @todos = Todo.all
+    end
     def create
          t = Todo.new
          t.task = params['task']
@@ -14,15 +17,15 @@ class TodoController < ApplicationController
          redirect_to "/todo/show/#{t.id}"
     
     end
-    
+    def destroy
+        t = Todo.find_by_id(params[:id])
+        t.destroy
+        redirect_to "/todo/index"
+    end
     def show
-        @todo_name="Eat food"
-        @todo_time="100000 min"
-        @todo_days="3"
-        @todo_description="eat all the food, leave none"
-    
-        todo_id = params[:id]
         @todo= Todo.find_by_id(params[:id])
+        todo_id = params[:id]
+        
 =begin
     if todo_id == '1'
         @todo_name = 'walk the dog'
@@ -47,6 +50,9 @@ class TodoController < ApplicationController
     
     end
 =end    
+    def edit
+        @todo = Todo.find_by_id(params[:id])
+    end
     end
     
 

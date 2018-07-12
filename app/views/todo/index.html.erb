@@ -7,24 +7,14 @@
         </p>
 
          <ul class="to-do-list">
+         <% @todos.each do |todo| %>
              <li>
                  <input type="checkbox">
-                 <a href="show/1">walk the dog</a>
-                 <span class="minutes">30 min</span>
-                 <span class="days-till-due">3 days</span>
+                 <a href="show/<%= todo.id %>"><%= todo.task %></a>
+                 <span class="minutes"><%= todo.time %> minutes</span>
+                 <span class="days-till-due"><%= todo.days %> day(s)</span>
              </li>
-             <li>
-                 <input type="checkbox">
-                 <a href="show/2">read</a>
-                 <span class="minutes">50 min </span>
-                 <span class="days-till-due">2 days</span>
-             </li>
-             <li>
-                 <input type="checkbox">
-                 <a href="show/3">stop</a>
-                 <span class="minutes">0</span>
-                 <span class="days-till-due"></span>
-             </li>
+         <% end %>
          </ul>
          
          
