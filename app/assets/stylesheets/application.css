@@ -20,10 +20,13 @@
 .minutes{
     background-color: rgb(100,149,237);
     border-radius: 5px;
+    text-decoration: none;
+    color: #000;
 }
 .days-till-due {
     background-color: #AFEEEE;
     border-radius: 5px;
+    
 }
 .to-do-list {
     border-radius: 10px;
@@ -38,7 +41,9 @@
     
 }
 li {
-    margin: 3px;
+    margin: 5px;
+    text-decoration: none;
+    color: #000;
 }
 #add-a-to-do{
     font-size: 20px;
@@ -93,6 +98,7 @@ li {
     
 }
 #back{
+    font-family: "Lucida Grande";
     font-size: 20px;
     text-align: center;
     color: #000;
@@ -100,6 +106,7 @@ li {
     padding: 5px;
     border-radius: 5px;
     box-shadow:5px 5px 5px #90A4AE;
+    margin:10px;
 }
 #back:active{
     box-shadow: 1px 1px 1px #90A4AE;
@@ -126,23 +133,6 @@ li {
     width: 200px;
     text-align: center
 }
-#Delete{
-    font-size: 20px;
-    text-align: center;
-    color: #000;
-    outline:none;
-    padding: 5px;
-    border-radius: 5px;
-    box-shadow:5px 5px 5px #90A4AE;
-}
-#Delete:active{
-    box-shadow: 1px 1px 1px #90A4AE;
-    color: #00FF00;
-}
-#Delete:hover{
-    background-color: #008000
-    
-}
 #Edit{
     font-size: 20px;
     text-align: center;
@@ -151,6 +141,9 @@ li {
     padding: 5px;
     border-radius: 5px;
     box-shadow:5px 5px 5px #90A4AE;
+    background-color: #e7e7e7;
+    margin: 10px;
+    text-decoration: none;
 }
 #Edit:active{
     box-shadow: 1px 1px 1px #90A4AE;
@@ -171,6 +164,7 @@ li {
     box-shadow:5px 5px 5px #90A4AE;
     text-decoration: none;
     background-color: #e7e7e7;
+    margin:10px;
 }
 #Delete:active{
     box-shadow: 1px 1px 1px #90A4AE;

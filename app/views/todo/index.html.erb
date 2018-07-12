@@ -10,9 +10,16 @@
          <% @todos.each do |todo| %>
              <li>
                  <input type="checkbox">
+                 <style>
+                 .minutes {
+                    text-decoration: none;
+                    color: #000;
+                 }
+                 </style>
                  <a href="show/<%= todo.id %>"><%= todo.task %></a>
-                 <span class="minutes"><%= todo.time %> minutes</span>
+                 <span class="minutes"><a href="show/<%= todo.id %>"><%= todo.time %> minutes</a></span>
                  <span class="days-till-due"><%= todo.days %> day(s)</span>
+                 
              </li>
          <% end %>
          </ul>
