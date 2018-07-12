@@ -18,7 +18,7 @@
                  </style>
                  <a href="show/<%= todo.id %>"><%= todo.task %></a>
                  <span class="minutes"><a href="show/<%= todo.id %>"><%= todo.time %> minutes</a></span>
-                 <span class="days-till-due"><%= todo.days %> day(s)</span>
+                 <span class="days-till-due"><a href="show/<%= todo.id %>"><%= todo.days %> day(s)</a></span>
                  
              </li>
          <% end %>

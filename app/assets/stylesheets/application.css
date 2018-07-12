@@ -34,7 +34,7 @@
     font-size: 15px;
     font-weight: bold;
     background-color: rgb(255,0,255); 
-    width:330px;
+    width:440px;
     margin:auto;
     list-style-type: none;
     padding: 5px;
@@ -118,6 +118,10 @@ li {
 }
 
 .show-page{
+    font-family: Verdana;
+    background-color: #F4F
+}
+.edit-page{
     font-family: Verdana;
     background-color: #F4F
 }
